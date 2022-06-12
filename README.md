@@ -14,7 +14,14 @@ python -m pip install pytesseract
 ```
 
 ### Download Engine
-- [DownloadLink](https://github.com/UB-Mannheim/tesseract/wiki)
+- Windows
+[DownloadLink](https://github.com/UB-Mannheim/tesseract/wiki)
+- CentOS
+```
+cd /etc/yum.repos.d/
+wget https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov:tesseract5/CentOS_8/home:Alexander_Pozdnyakov:tesseract5.repo
+yum install tesseract
+```
 
 ### Use
 ```
