@@ -22,6 +22,11 @@ cd /etc/yum.repos.d/
 wget https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov:tesseract5/CentOS_8/home:Alexander_Pozdnyakov:tesseract5.repo
 yum install tesseract
 ```
+- Ubuntu
+```
+sudo apt-get update
+sudo apt-get install libleptonica-dev tesseract-ocr tesseract-ocr-dev libtesseract-dev python3-pil tesseract-ocr-eng tesseract-ocr-script-latn
+```
 
 ### Use
 ```
