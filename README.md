@@ -16,23 +16,27 @@ python -m pip install pytesseract
 ### Download Engine
 - Windows
 [DownloadLink](https://github.com/UB-Mannheim/tesseract/wiki)
+
 - CentOS
 ```
 cd /etc/yum.repos.d/
 wget https://download.opensuse.org/repositories/home:Alexander_Pozdnyakov:tesseract5/CentOS_8/home:Alexander_Pozdnyakov:tesseract5.repo
 yum install tesseract
 ```
+
 - Ubuntu
 ```
-sudo apt-get update
-sudo apt-get install libleptonica-dev tesseract-ocr tesseract-ocr-dev libtesseract-dev python3-pil tesseract-ocr-eng tesseract-ocr-script-latn
+sudo apt install tesseract-ocr
+sudo apt install libtesseract-dev
 ```
 
 ### Use
 ```
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = f'{Engine_Path}' # Set pytesseract engine
+# if your system is 'Windows'. You need to et pytesseract engine path
+pytesseract.pytesseract.tesseract_cmd = f'{Engine_Path}' 
+
 text = pytesseract.image_to_string(img, lang=None) # lang > can set language
 print(text)
 ```
